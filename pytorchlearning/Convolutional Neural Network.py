@@ -48,7 +48,7 @@ class Net(nn.Module):
         x=x.view(x.size()[0],-1)#全连接层只能对两位数据进行处理
         x=self.fc1(x)
         x=self.fc2(x)
-        return x
+        return x 
 
 #定义模型
 model=Net()
