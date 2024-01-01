@@ -132,8 +132,7 @@ def to_cuda(*args):
 class TimeoutError(BaseException):
     pass
 
-
-def timeout(seconds=10, error_message=os.strerror(errno.ETIME)):
+'''def timeout(seconds=10, error_message=os.strerror(errno.ETIME)):
 
     def decorator(func):
 
@@ -163,4 +162,4 @@ def timeout(seconds=10, error_message=os.strerror(errno.ETIME)):
 
         return wraps(func)(wrapper)
 
-    return decorator
+    return decorator'''

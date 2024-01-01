@@ -20,7 +20,7 @@ def simplify(f, seconds):
     Simplify an expression.
     """
     assert seconds > 0
-    @timeout(seconds)
+    #@timeout(seconds)
     def _simplify(f):
         try:
             f2 = sp.simplify(f)
@@ -29,11 +29,10 @@ def simplify(f, seconds):
                 return f
             else:
                 return f2
-        except TimeoutError:
-            return f
-        except Exception as e:
-            logger.warning(f"{type(e).__name__} exception when simplifying {f}")
-            return f
+        except:
+            pass
+
+        
     return _simplify(f)
 
 
