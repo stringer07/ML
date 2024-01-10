@@ -8,8 +8,7 @@ import numpy as np
 import sympy as sp
 from gym import spaces
 
-from envs.utils_env import cyclic_perm_arg, get_inv_arg_poly, get_refl_arg_poly,\
-    get_first_polylog_obs, get_dupli_arg_poly
+from utils_env import cyclic_perm_arg, get_inv_arg_poly, get_refl_arg_poly, get_first_polylog_obs, get_dupli_arg_poly
 from .utils_obs import BASE_SYMPY_OPERATORS, BASE_OPERATORS, VAR_LIST, SYMB_LIST, INC_ACTIONS
 from .utils_obs import write_infix, parse_int, write_int
 
